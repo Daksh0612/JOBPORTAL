@@ -76,6 +76,18 @@ Open `http://localhost:8080`
 Do not commit real database passwords into `application.properties`.
 Use environment variables instead.
 
+## Render Deployment
+
+This repository includes a `Dockerfile` and `render.yaml` for deployment on Render.
+
+Add these environment variables in Render:
+
+- `DB_URL`
+- `DB_USERNAME`
+- `DB_PASSWORD`
+
+Then deploy the repository as a Docker web service or Blueprint.
+
 ## Ideas for Next Improvements
 
 - Add admin dashboard
